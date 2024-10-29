@@ -61,7 +61,7 @@ set(OSI_INSTALL_INCLUDE_DIR ${OSI_INSTALL_INCLUDE_DIR}/osi${VERSION_MAJOR})
 
 configure_file(osi_version.proto.in osi_version.proto)
 
-find_package(Protobuf 2.6.1 REQUIRED)
+find_package(Protobuf REQUIRED)
 set(PROTOBUF_IMPORT_DIRS ${PROTOBUF_INCLUDE_DIRS})
 
 set(OSI_PROTO_FILES
