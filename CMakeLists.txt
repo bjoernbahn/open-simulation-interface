@@ -99,7 +99,7 @@ set(OSI_PROTO_FILES
     osi_streamingupdate.proto
 )
 
-protobuf_generate_cpp(PROTO_SRCS PROTO_HEADERS ${OSI_PROTO_FILES})
+protobuf_generate_cpp(PROTO_SRCS PROTO_HEADERS ${OSI_PROTO_FILES} APPEND_PATH)
 set(FLAT_HEADERS "")
 if(OSI_BUILD_FLATBUFFER)
   set(FLAT_FBS "")
